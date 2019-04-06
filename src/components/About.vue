@@ -4,7 +4,8 @@
 			<div class="container">
 			<div class="columns">
 				<div class="column is-9">
-					<article class="media notification notiVue">
+					<transition appear appear-active-class="fade-enter-active">
+						<article class="media notification notiVue">
 							<div class="media-content">
 								<div class="content">
 									<h1 class="title is-size-3 has-text-white">
@@ -17,10 +18,13 @@
 									</p>
 								</div>
 							</div>
-					</article>
+						</article>
+					</transition>
 				</div>
 				<div class="column center">
-					<img src="./../assets/imagen-perfil.jpg" class="card">
+					<transition appear appear-active-class="slide-enter-active">
+						<img src="./../assets/imagen-perfil.jpg" class="card">
+					</transition>
 				</div>
 			</div>
 		</div>
@@ -68,4 +72,35 @@ export default {
 		justify-content: center;
 		align-items: center;
 	}
+
+	.fade-enter-active{
+		animation: go1 4s;
+	}
+
+	@keyframes go1{
+		from{
+			transform: translateX(-80px);
+			opacity: 0;
+		}
+		to{
+			transform: translateX(0px);
+			opacity: 1;
+		}
+	}
+
+	.slide-enter-active{
+		animation: go2 4s;
+	}
+
+	@keyframes go2{
+		from{
+			transform: translateX(80px);
+			opacity: 0;
+		}
+		to{
+			transform: translateX(0px);
+			opacity: 1;
+		}
+	}
+
 </style>

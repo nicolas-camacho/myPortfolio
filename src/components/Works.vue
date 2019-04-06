@@ -1,9 +1,9 @@
 <template>
-	<section class="hero is-fullheight">
+	<section class="hero is-fullheight reposSection">
 		<div class="hero-body">
 			<div class="container">
 				<div class="columns is-multiline">
-					<repositories v-for="repo in reposit" :repo="repo">
+					<repositories v-for="(repo, index) in reposit" :repo="repo" :key="index">
 					</repositories>
 				</div>
 			</div>
@@ -30,5 +30,7 @@ export default {
 </script>
 
 <style scoped>
-
+ .reposSection {
+	background-color: #41B883;
+ }
 </style>
