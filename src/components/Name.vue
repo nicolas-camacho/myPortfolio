@@ -37,12 +37,6 @@ export default {
 		50% { border-color: white; }
 	}
 	
-	.center {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
 	.nameSection {
 		background-color: #34495E;
 	}
