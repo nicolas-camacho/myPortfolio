@@ -52,8 +52,12 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
   .tabs{
     margin-bottom: 0 !important;
+  }
+
+  a{
+    font-weight: bold;
   }
 </style>
