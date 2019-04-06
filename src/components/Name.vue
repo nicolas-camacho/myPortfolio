@@ -3,9 +3,7 @@
 		<div class="hero-body">
 			<div class="container">
 				<div class="content">
-					<transition appear appear-active-class="type">
-						<h1 class="title has-text-white is-family-monospace">{{myName}}</h1>
-					</transition>
+						<h1 class="title has-text-white is-family-monospace type">{{myName}}</h1>
 					<transition appear appear-active-class="fade-enter-active">
 						<h1 class="subtitle is-size-4 vueColor is-family-code is-italic">
 							{{description}}
