@@ -3,14 +3,8 @@
 		<div class="hero-body">
 			<div class="container">
 			<div class="columns">
-				<div class="column is-two-thirds">
+				<div class="column is-9">
 					<article class="media notification notiVue">
-							<figure class="media-left">
-								<span class="icon">
-									<i class="fab fa-2x fa-css3-alt">	
-									</i>
-								</span>
-							</figure>
 							<div class="media-content">
 								<div class="content">
 									<h1 class="title is-size-3 has-text-white">
@@ -25,7 +19,7 @@
 							</div>
 					</article>
 				</div>
-				<div class="column">
+				<div class="column center">
 					<img src="./../assets/imagen-perfil.jpg" class="card">
 				</div>
 			</div>
@@ -46,7 +40,7 @@ export default {
 	}
 
 	.card {
-		width: 190px;
+		width: 200px;
 		border-radius: 10px;
 		box-shadow: 0px 0px 0px grey;
 		transition: box-shadow .6s ease-out;
@@ -56,7 +50,7 @@ export default {
 
 	.card:hover {
 		box-shadow: 1px 8px 20px grey;
-		width: 230px;
+		width: 240px;
 		transition: box-shadow .6s ease-in;
 		transition: width .3s ease-in;
 	}
