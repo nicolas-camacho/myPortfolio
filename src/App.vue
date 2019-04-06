@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="tabs is-right">
+    <div class="tabs is-centered">
       <ul>
         <li :class="{ 'is-active': displayName }" @click="showName()"><a>Home</a></li>
         <li :class="{ 'is-active': displayAbout }" @click="showAbout()"><a>About</a></li>
@@ -53,4 +53,7 @@ export default {
 </script>
 
 <style>
+  .tabs{
+    margin-bottom: 0 !important;
+  }
 </style>
