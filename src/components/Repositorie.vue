@@ -18,6 +18,7 @@
 						<p class="is-size-5 has-text-white">
 							{{repo.description}}
 						</p>
+						<span class="tag is-warning">{{repo.language}}</span>
 					</div>
 				</div>
 			</article>
